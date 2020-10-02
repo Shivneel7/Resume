@@ -38,7 +38,7 @@ public class KeyInput implements KeyListener, Constants {
 				keyDown[3] = true;
 			}
 		}else {
-			if(e.getKeyCode() == KeyEvent.VK_W && !player.isJumping()) {
+			if((e.getKeyCode() == KeyEvent.VK_W || e.getKeyCode() == KeyEvent.VK_SPACE) &&  !player.isJumping()) {
 				player.setDy(JUMP_HEIGHT);
 				player.setJumping(true);
 
